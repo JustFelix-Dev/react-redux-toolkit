@@ -1,10 +1,10 @@
-const configureStore = require('@reduxjs/toolkit').configureStore
-const reduxLogger = require('redux-logger')
-const cakeReducer = require('../features/cake/cakeSlice')
-const iceCreamReducer = require('../features/iceCream/iceCreamSlice')
-const userReducer = require('../features/user/userSlice')
+import { configureStore } from '@reduxjs/toolkit'
+// const reduxLogger = require('redux-logger')
+import cakeReducer from '../features/cake/cakeSlice'
+import iceCreamReducer from '../features/iceCream/iceCreamSlice'
+import  userReducer  from '../features/user/userSlice'
 
-const logger = reduxLogger.createLogger()
+// const logger = reduxLogger.createLogger()
 
 const store = configureStore({
     reducer : {
@@ -16,4 +16,4 @@ const store = configureStore({
     
 })
 
-module.exports = store
+export default store
