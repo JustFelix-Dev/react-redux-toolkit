@@ -6,7 +6,7 @@ import  userReducer  from '../features/user/userSlice'
 
 // const logger = reduxLogger.createLogger()
 
-const store = configureStore({
+export const store = configureStore({
     reducer : {
         cake : cakeReducer,
         iceCream : iceCreamReducer,

@@ -12,8 +12,8 @@ function App() {
   return (
     <>
     <CakeView/>
-    <UserView/>
     <IceCreamView/>
+    <UserView/>
     </>
   )
 }
